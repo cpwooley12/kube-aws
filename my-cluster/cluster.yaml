@@ -1,7 +1,7 @@
 # Unique name of Kubernetes cluster. In order to deploy
 # more than one cluster into the same AWS account, this
 # name must not conflict with an existing cluster.
-clusterName: k8s_sandbox
+clusterName: k8ssandbox
 
 # The URI of the S3 bucket for the cluster
 s3URI: s3://my-bucket
@@ -74,7 +74,7 @@ apiEndpoints:
   # from worker nodes and external clients. Configure the options
   # below if you'd like kube-aws to create a Route53 record sets/hosted zones
   # for you.  Otherwise the deployer is responsible for making this name routable
-  dnsName: k8s_sandbox
+  dnsName: k8ssandbox
 
   # Configuration for the load balancer serving this endpoint
   # Omit all the settings when you want kube-aws not to provision a load balancer for you
@@ -1702,7 +1702,7 @@ kubeAwsPlugins:
     #   annotations: {}
     #   # set the ingress hostname to a valid domain that gets routed to your ingress controller
     #   # by default generate a host based on the servicename and clusters apiendpoint dns name.
-    #   hostname: kubernetes-dashboard.ingress.k8s_sandbox
+    #   hostname: kubernetes-dashboard.ingress.k8ssandbox
     #   # set 'supressIngressSecret' to true if you are using something like jetstack cert-manager for auto provisioning ingress certificates
     #   # ingress certificates
     #   supressIngresSecret: false
